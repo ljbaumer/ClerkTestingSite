@@ -1,0 +1,118 @@
+External Sources and Scripts Description:
+
+/js/
+	form-scripts.js:
+		Basic, pre-built, contact-form validator. Running three if-then statements re: if form is filled out correctly. 
+	
+	jquery-ui.js:
+		See: https://github.com/jquery/jquery-ui
+		Pre-built jquery interfaces for simple animations on site
+		Including bottom and top scrolling bump as well as pop-up modal displays
+		Used primarily for widgets and side-bar
+	
+	main.js:
+		Basic script describing the functionality of (basically) all non-static objects on page from search to widgets
+		Easy to change and modify, but also working in congruence with vendor scripts so be careful with var names
+	
+	validator.min.jas:
+		minimized .js script from: https://github.com/1000hz/bootstrap-validator
+		Part of form-scripts.js package
+		Used to ensure users enter all text into forms before submitting
+	
+/css/
+	linecons.css
+		See: http://www.flaticon.com/packs/linecons
+		A pack of unicode, free-use, icons used intermittently throughout site, mainly just in case needed
+	
+	font-awesome.css 
+		See: http://fontawesome.io
+		A pack of unicode, free-use, icons used intermittently throughout site, useful for any major project
+	
+	fontello.css
+		See: http://fontello.com/
+		Custom css/unicode font generator, again mainly just present as a reference to pull from
+	
+	jquery-ui.css, jquery-ui.structure.css
+		See: http://jqueryui.com
+		See: /js/jquery-ui.js
+		Formatting for jquery site elements, default formatting is always quite bland for this package, so it has been modified to fit site theme. 
+	
+	main.css
+		Containing the vast majority of the .css styling for the site
+		Compiled from a variety of past project, hence the bloat
+		Large file, but not t the point that it is slowing down the loading times of the site
+		Using a pre-built grid system from a previous project 
+		See: https://css-tricks.com/snippets/css/retina-display-media-query/ for retina info
+		Including a variety of sprites for differences in screen sizes and formatting
+		Written in .css with Sass (again, imported from previous project as I had not nearly enough time to re-structure an entire grid/post system)
+			See /vender/bourbon/	
+	
+	
+/vendor/
+	/animate.css/
+		Very cool .css animation kit, really quality and simple to implement
+		See: https://github.com/daneden/animate.css
+	
+	/bourbon/
+		See: https://github.com/thoughtbot/bourbon
+		Very useful library of Sass mixins 
+			Note: tool was not used to fully re-write .css and Sass for Clerk site, re-used formatting
+	
+	/eventEmitter/
+		See: https://github.com/Olical/EventEmitter
+		Probably not even necessary for what we are doing, but included b/c of general usefulness
+	
+	/eventie/
+		eventie add support for `event.target` and [`.handleEvent` method](https://developer.mozilla.org/en-US/docs/DOM/EventListener#handleEvent\(\)) for Internet Explorer 8.
+		Included purely for IE8 compatibility, again, probably not necessary for current build, but useful to have nonetheless
+	
+	/imagesloaded/
+		See: https://github.com/desandro/imagesloaded
+		Simple .js for javascript detection of when images are loaded
+		Useful for our site b/c of the # of fast-loading .js scripts and the # of potentially large images
+	
+	/jquery/
+		Normal jquery install
+	
+	/magnific-popup/
+		See: https://github.com/dimsemenov/Magnific-Popup
+		Super lightweight lightbox plugin for jquery
+		Used in carousels and other grid formats
+		
+	/neat/
+		See: https://github.com/thoughtbot/neat
+		Prebuilt Sass grid written with Bourbon 
+		Super-useful time saver to avoid having to write enormous amount of .css and Sass from scratch
+		
+	/owl-carousel/
+		See: https://github.com/OwlCarousel2/OwlCarousel2
+		Touch-enabled jquery carousel 
+		Useful for mobile site, and also just easy to work with for normal site
+	
+	/reset-css/
+		Classic CSS reset, necessary before Sass and Bourbon implementation
+	
+	/slick-carousel/
+		See: https://github.com/kenwheeler/slick
+		Really simple carousel, easily customizable
+		Used for below articles (e.g. the related articles pane)
+	
+	/sticky-kit/
+		See: https://github.com/leafo/sticky-kit
+		Full sticky kit, extremely useful for sticky columns on site, tried w/o sticky columns and the site ends up looking very cheap
+		I have no clue how to do sticky items without using this pre-built kit, kind of a pain sometimes but it definitely gets the job done
+		
+	/superfish/
+		See: https://github.com/joeldbirch/superfish/
+		Easy jquery menus, super nice to not have to do it all in strange HTML formatting
+		Based off of 'suckerfish' dropdown system
+	
+	/Swiper/
+		See: https://github.com/nolimits4web/Swiper
+		Mobile sliders/'swipers'
+		Used mainly so that owl-carousel doesn't have to be made functional for mobile versions
+	
+	/waypoints/
+		See: https://github.com/imakewebthings/waypoints
+		Used for triggering waypoints when scrolling through sites
+		In this case, it is used for the little arrow that appears when you scroll to the top or bottom of the site momentarily
